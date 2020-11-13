@@ -68,9 +68,3 @@ async function askQuestion(query) {
 }
 
 askQuestion("Pick: ");
-
-
-
-
-
-
