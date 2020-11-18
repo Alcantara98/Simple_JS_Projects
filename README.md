@@ -1,6 +1,6 @@
 # Simple JavaScript Projects
 ### About
-Projects from codecademy for learning JS.
+Projects from codecademy for learning JS. Feel free to visit [Codecademy](https://www.codecademy.com/).
 ### Notable Projects
 * lodash was the most difficult one.
 * mysteriousOrganism I had the most fun with.
