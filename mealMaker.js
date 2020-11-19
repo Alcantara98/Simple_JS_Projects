@@ -1,40 +1,52 @@
+/**
+ * Meal Maker
+ * 
+ * As a frequent diner, you love trying out new restaurants and experimenting with different foods. 
+ * However, having to figure out what you want to order can be a time-consuming ordeal if the menu 
+ * is big, and you want an easier way to be able to figure out what you are going to eat.
+ *
+ * In this project, you’ll use JavaScript to randomly create a three-course meal based on what is 
+ * available on a menu. We’ll keep running it until we’re satisfied with the generated meal!
+ * 
+ * @author Elbert Alcantara
+ */
 const menu = {
     _courses: {
         _appetizers: [],
         _mains: [],
         _desserts: [],
-        
-        set appetizers(appetizers){
+
+        set appetizers(appetizers) {
             this._appetizers = appetizers;
         },
-        get appetizers(){
+        get appetizers() {
             return this._appetizers;
         },
-        set mains(mains){
+        set mains(mains) {
             this._main = main;
         },
-        get mains(){
+        get mains() {
             return this._mains;
         },
-        set desserts(desserts){
+        set desserts(desserts) {
             this._desserts = desserts;
         },
-        get desserts(){
+        get desserts() {
             return this._desserts;
         }
     },
 
-    get courses(){
+    get courses() {
         return this._courses;
     },
 
-    addDishToCourse(courseName, dishName, dishPrice){
+    addDishToCourse(courseName, dishName, dishPrice) {
         let newCourse = {
             name: dishName,
             price: dishPrice
         }
 
-        switch(courseName){
+        switch (courseName) {
             case 'appetizers':
                 this._courses.appetizers.push(newCourse);
                 break;
@@ -46,10 +58,10 @@ const menu = {
         }
     },
 
-    getRandomDishFromCourse(courseName){
+    getRandomDishFromCourse(courseName) {
         let chosenCourse;
 
-        switch(courseName){
+        switch (courseName) {
             case 'appetizers':
                 chosenCourse = this._courses.appetizers;
                 break;
@@ -65,7 +77,7 @@ const menu = {
         return chosenCourse[randomInt];
     },
 
-    generateRandomMeal(){
+    generateRandomMeal() {
         let appetizer = this.getRandomDishFromCourse('appetizers');
         let main = this.getRandomDishFromCourse('mains');
         let dessert = this.getRandomDishFromCourse('desserts');
