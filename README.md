@@ -9,4 +9,4 @@ Projects from codecademy for learning JS. Feel free to visit [Codecademy](https:
 * JavaScript
 * Node.js
 ### Status
-Projects are finished, but as usual, there is always room to improve code.
+Projects are finished. There are many more down the course to come.
